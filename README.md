@@ -13,11 +13,11 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Scripts
 
-| Command        | Description              |
-|----------------|--------------------------|
-| `npm run dev`  | Start development server |
-| `npm run build`| Production build → `dist/` |
-| `npm run preview` | Preview production build |
+| Command           | Description                |
+|-------------------|----------------------------|
+| `npm run dev`     | Start development server   |
+| `npm run build`   | Production build → `dist/` |
+| `npm run preview` | Preview production build   |
 
 ## Background video
 
@@ -41,25 +41,7 @@ public/
   images/       local product & UI images
 ```
 
-## Push to GitHub
-
-```bash
-cd forest-rest
-git init
-git add .
-git commit -m "Initial commit: CHAIDAO luxury tea landing page"
-gh repo create chaidao-forest-rest --public --source=. --remote=origin --push
-```
-
-Or create an empty repo on GitHub, then:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-git branch -M main
-git push -u origin main
-```
-
 ## Deploy (optional)
 
-- **Vercel / Netlify**: connect the GitHub repo, build command `npm run build`, output `dist`.
-- **GitHub Pages**: use a static deploy action for Vite (`base` may need `/repo-name/` in `vite.config.js`).
+- **Vercel / Netlify**: connect this repo, build command `npm run build`, output folder `dist`.
+- Any host: run `npm run build` and upload the `dist` folder.
